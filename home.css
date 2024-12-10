@@ -1,0 +1,79 @@
+* {
+    margin: 0;
+    color: white;
+    font-family: "Russo One", sans-serif;
+    font-weight: 400;
+  }
+  
+  .Box {
+    height: 100vh;
+    background-image: url("Image/background1.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+  }
+  
+  .Inner_Box {
+    position: relative;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+  }
+  
+  .Inner_Box h1 {
+    font-family: "VW";
+    font-style: italic;
+    font-size: 110px;
+    animation: animate 3s linear infinite;
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards;
+  }
+  
+  @keyframes animate {
+    0% {
+      color: rgba(0, 0, 0, 0);
+      text-shadow: none;
+    }
+    100% {
+      color: #fff;
+      text-shadow: 0 0 10px #03bcf4, 0 0 20px #03bcf4, 0 0 40px #03bcf4,
+        0 0 80px #03bcf4, 0 0 160px #03bcf4;
+    }
+  }
+  
+  .Inner_Box p {
+    margin: 100px 0 80px 0;
+    font-size: 46px;
+    color: #fff;
+  }
+  
+  .button-cnt {
+    width: 100%;
+  }
+  
+  .button {
+    display: flex;
+    border: 2px solid white;
+    border-radius: 4px;
+    width: 230px;
+    height: 40px;
+    color: white;
+    text-decoration: none;
+    justify-content: center;
+    align-items: center;
+    transition: all 0.2s ease-in-out;
+    margin: auto;
+    margin-bottom: 20px;
+    font-family: "VW";
+    letter-spacing: 1px;
+  }
+  
+  .bottom {
+    margin-bottom: 0px;
+  }
+  
+  .button:hover {
+    background-color: #35a7ff;
+    border-color: #35a7ff;
+  }
+  
